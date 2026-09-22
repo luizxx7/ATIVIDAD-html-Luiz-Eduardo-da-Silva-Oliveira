@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário Simples</title>
+    <title>Formulário de Cadastro de Alunos</title>
 </head>
 
-<body>
+<body style="background-color: LightSteelBlue;">
 
-    <h2>Formulário de Cadastro</h2>
+
+
+    <h2>Formulário de Cadastro de Alunos</h2>
 
     <form action="#" method="POST">
 
         <!-- Campo para Nome -->
         <p>
             <label for="nome">Nome Completo:</label><br>
-            <input 
-                type="text" 
-                id="nome" 
-                name="nome" 
-                placeholder="Digite seu nome" 
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                value="Luiz Eduardo da Silva Oliveira"
                 required
             >
         </p>
@@ -27,11 +29,11 @@
         <!-- Campo para E-mail -->
         <p>
             <label for="email">E-mail:</label><br>
-            <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                placeholder="seuemail@exemplo.com" 
+            <input
+                type="email"
+                id="email"
+                name="email"
+                value="luiz.silva09@exemplo.com"
                 required
             >
         </p>
@@ -39,10 +41,37 @@
         <!-- Campo para Senha -->
         <p>
             <label for="senha">Senha:</label><br>
-            <input 
-                type="password" 
-                id="senha" 
-                name="senha" 
+            <input
+                type="password"
+                id="senha"
+                name="senha"
+                value="zeca222"
+                required
+            >
+        </p>
+
+        <!-- Campo para Idade -->
+        <p>
+            <label for="idade">Idade:</label><br>
+            <input
+                type="number"
+                id="idade"
+                name="idade"
+                value="17"
+                min="1"
+                max="100"
+                required
+            >
+        </p>
+
+        <!-- Campo para Data de Nascimento -->
+        <p>
+            <label for="data_nascimento">Data de Nascimento:</label><br>
+            <input
+                type="date"
+                id="data_nascimento"
+                name="data_nascimento"
+                value="2009-08-07"
                 required
             >
         </p>
@@ -57,14 +86,14 @@
             </select>
         </p>
 
-        <!-- Caixa de Texto Grande -->
+        <!-- Caixa de Texto -->
         <p>
             <label for="mensagem">Mensagem:</label><br>
-            <textarea 
-                id="mensagem" 
-                name="mensagem" 
-                rows="4" 
-                cols="30" 
+            <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="4"
+                cols="30"
                 placeholder="Escreva sua mensagem aqui..."
             ></textarea>
         </p>
